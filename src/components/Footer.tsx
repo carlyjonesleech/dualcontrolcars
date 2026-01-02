@@ -1,4 +1,5 @@
-import { Car, Facebook, Instagram, Twitter } from "lucide-react";
+import { Facebook, Instagram, Twitter } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -29,13 +30,14 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <a href="#" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center">
-                <Car className="w-6 h-6 text-secondary-foreground" />
-              </div>
-              <span className="text-xl font-bold">DualDrive</span>
+              <img 
+                src={logo} 
+                alt="Chester Dual Control Car Hire Ltd" 
+                className="h-16 w-auto"
+              />
             </a>
             <p className="text-primary-foreground/70 mb-6">
-              Providing safe, reliable dual control car hire for learner drivers and instructors across the area.
+              Providing safe, reliable dual control car hire for learner drivers and instructors across Chester and the surrounding areas.
             </p>
             <div className="flex gap-4">
               <a
@@ -113,7 +115,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="border-t border-primary-foreground/10 mt-12 pt-8 text-center text-primary-foreground/60">
-          <p>© {currentYear} DualDrive. All rights reserved.</p>
+          <p>© {currentYear} Chester Dual Control Car Hire Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -37,7 +37,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email us</p>
-                  <p className="font-semibold text-foreground">hello@dualdrive.co.uk</p>
+                  <p className="font-semibold text-foreground">info@chesterdualcontrol.co.uk</p>
                 </div>
               </div>
 
@@ -47,7 +47,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="font-semibold text-foreground">Greater London Area</p>
+                  <p className="font-semibold text-foreground">Chester & Surrounding Areas</p>
                 </div>
               </div>
             </div>
