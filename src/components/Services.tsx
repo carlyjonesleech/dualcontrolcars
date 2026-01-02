@@ -8,16 +8,16 @@ const Services = () => {
       icon: <Calendar className="w-7 h-7" />,
       title: "Test Day Hire",
       description:
-        "Take your driving test in a car you're comfortable with. Available for both manual and automatic tests.",
+        "Take your driving test in a car you're comfortable with. Pricing based on notice given. £80 discount without supervising driver.",
       features: [
-        "Warm-up session before your test",
-        "Collection from test centre",
-        "Full dual controls fitted",
-        "Comprehensive insurance included",
-        "Calm, experienced handover",
+        "14+ days' notice: £195",
+        "7–13 days' notice: £245",
+        "Under 7 days' notice: £295",
+        "£80 off without supervising driver",
+        "Full dual controls & insurance",
       ],
-      price: "£85",
-      priceLabel: "per test",
+      price: "From £195",
+      priceLabel: "with driver",
       popular: true,
     },
     {
@@ -33,7 +33,7 @@ const Services = () => {
         "Learner signage included",
         "Breakdown cover included",
       ],
-      price: "£45",
+      price: "£60",
       priceLabel: "per day",
     },
     {
@@ -43,13 +43,13 @@ const Services = () => {
       description:
         "Extra practice with friends or family. Perfect for building confidence between lessons.",
       features: [
-        "Half day & full day options",
+        "Half day (3.5 hrs): £85",
+        "Full day hire: £150",
+        "Evenings & weekends available",
         "Safe dual control system",
         "Comprehensive insurance",
-        "No instructor required",
-        "Flexible pickup locations",
       ],
-      price: "£55",
+      price: "From £85",
       priceLabel: "half day",
     },
   ];
