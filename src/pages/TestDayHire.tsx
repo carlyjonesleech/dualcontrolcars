@@ -110,11 +110,11 @@ const TestDayHire = () => {
                 </Button>
               </div>
             </div>
-            <div className="hidden lg:block">
+            <div className="order-first lg:order-last">
               <img
                 src={testDayHero}
                 alt="Chester Dual Control Car Hire - Driving Test Car Hire"
-                className="w-full h-auto rounded-2xl shadow-2xl"
+                className="w-full max-w-md mx-auto lg:max-w-none h-auto rounded-2xl shadow-2xl"
               />
             </div>
           </div>
@@ -331,11 +331,11 @@ const TestDayHire = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="hidden lg:block">
+              <div className="order-first lg:order-first">
                 <img
                   src={justInTime}
                   alt="Just in time for your test - Chester Dual Control"
-                  className="w-full h-auto rounded-2xl shadow-xl"
+                  className="w-full max-w-sm mx-auto lg:max-w-none h-auto rounded-2xl shadow-xl"
                 />
               </div>
               <div className="text-center lg:text-left">
