@@ -19,7 +19,6 @@ import {
   MapPin,
   AlertCircle,
 } from "lucide-react";
-import testDayHero from "@/assets/test-day-hero.png";
 import justInTime from "@/assets/just-in-time.png";
 
 const TestDayHire = () => {
@@ -112,8 +111,8 @@ const TestDayHire = () => {
             </div>
             <div className="order-first lg:order-last">
               <img
-                src={testDayHero}
-                alt="Chester Dual Control Car Hire - Driving Test Car Hire"
+                src={justInTime}
+                alt="Just in time for your driving test - Chester Dual Control"
                 className="w-full max-w-md mx-auto lg:max-w-none h-auto rounded-2xl shadow-2xl"
               />
             </div>
