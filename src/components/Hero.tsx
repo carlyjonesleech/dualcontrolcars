@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight } from "lucide-react";
-import heroCar from "@/assets/hero-car.jpg";
+import testDayHero from "@/assets/test-day-hero.png";
 
 const Hero = () => {
   const benefits = [
@@ -61,18 +61,18 @@ const Hero = () => {
           </div>
 
           {/* Image */}
-          <div className="relative hidden lg:block animate-fade-up" style={{ animationDelay: "0.3s" }}>
+          <div className="relative animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-secondary/20 to-transparent rounded-3xl blur-2xl" />
               <img
-                src={heroCar}
-                alt="Dual control learner car"
-                className="relative rounded-2xl shadow-2xl w-full object-cover"
+                src={testDayHero}
+                alt="Chester Dual Control Car Hire - Driving Test Car Hire"
+                className="relative rounded-2xl shadow-2xl w-full max-w-md mx-auto lg:max-w-none object-cover"
               />
             </div>
             
             {/* Floating badge */}
-            <div className="absolute -bottom-4 -left-4 bg-card rounded-xl p-4 shadow-xl animate-float">
+            <div className="absolute -bottom-4 -left-4 bg-card rounded-xl p-4 shadow-xl animate-float hidden lg:flex">
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center">
                   <span className="text-2xl">⭐</span>
