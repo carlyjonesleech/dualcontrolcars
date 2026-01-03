@@ -19,6 +19,8 @@ import {
   MapPin,
   AlertCircle,
 } from "lucide-react";
+import testDayHero from "@/assets/test-day-hero.png";
+import justInTime from "@/assets/just-in-time.png";
 
 const TestDayHire = () => {
   const whatsIncluded = [
@@ -76,35 +78,44 @@ const TestDayHire = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 md:pt-32 md:pb-24 bg-hero-gradient text-primary-foreground">
+      <section className="pt-24 pb-16 md:pt-32 md:pb-24 bg-hero-gradient text-primary-foreground overflow-hidden">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-secondary/20 text-secondary px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <Calendar className="w-4 h-4" />
-              Test Day Vehicle Hire
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 bg-secondary/20 text-secondary px-4 py-2 rounded-full text-sm font-medium mb-6">
+                <Calendar className="w-4 h-4" />
+                Test Day Vehicle Hire
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+                Test Day Car Hire – Chester
+              </h1>
+              <p className="text-xl md:text-2xl text-primary-foreground/80 mb-8">
+                Dual-Control Test Car Hire for Learners Without a Car
+              </p>
+              <p className="text-lg text-primary-foreground/70 mb-8">
+                If your learner doesn't have access to a suitable car for their driving test, we offer a fully managed test-day vehicle hire service using modern, dual-control cars, based locally in Chester.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button variant="hero" size="lg" className="text-lg px-8">
+                  <Calendar className="w-5 h-5 mr-2" />
+                  Check Availability
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="text-lg px-8 bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+                >
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  WhatsApp Us
+                </Button>
+              </div>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
-              Test Day Car Hire – Chester
-            </h1>
-            <p className="text-xl md:text-2xl text-primary-foreground/80 mb-8 max-w-3xl mx-auto">
-              Dual-Control Test Car Hire for Learners Without a Car
-            </p>
-            <p className="text-lg text-primary-foreground/70 mb-8 max-w-2xl mx-auto">
-              If your learner doesn't have access to a suitable car for their driving test, we offer a fully managed test-day vehicle hire service using modern, dual-control cars, based locally in Chester.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg" className="text-lg px-8">
-                <Calendar className="w-5 h-5 mr-2" />
-                Check Availability
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-lg px-8 bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
-              >
-                <MessageCircle className="w-5 h-5 mr-2" />
-                WhatsApp Us
-              </Button>
+            <div className="hidden lg:block">
+              <img
+                src={testDayHero}
+                alt="Chester Dual Control Car Hire - Driving Test Car Hire"
+                className="w-full h-auto rounded-2xl shadow-2xl"
+              />
             </div>
           </div>
         </div>
@@ -318,27 +329,38 @@ const TestDayHire = () => {
       {/* Is This Right For You Section */}
       <section className="py-16 bg-card">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">
-              Is This Right For You?
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              This service is ideal if:
-            </p>
-            <div className="space-y-4 mb-8">
-              {idealFor.map((item, index) => (
-                <div
-                  key={index}
-                  className="flex items-center gap-3 p-4 bg-background rounded-xl border border-border justify-center"
-                >
-                  <CheckCircle className="w-6 h-6 text-secondary flex-shrink-0" />
-                  <span className="text-foreground font-medium">{item}</span>
+          <div className="max-w-5xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="hidden lg:block">
+                <img
+                  src={justInTime}
+                  alt="Just in time for your test - Chester Dual Control"
+                  className="w-full h-auto rounded-2xl shadow-xl"
+                />
+              </div>
+              <div className="text-center lg:text-left">
+                <h2 className="text-3xl md:text-4xl font-bold mb-8">
+                  Is This Right For You?
+                </h2>
+                <p className="text-lg text-muted-foreground mb-8">
+                  This service is ideal if:
+                </p>
+                <div className="space-y-4 mb-8">
+                  {idealFor.map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center gap-3 p-4 bg-background rounded-xl border border-border"
+                    >
+                      <CheckCircle className="w-6 h-6 text-secondary flex-shrink-0" />
+                      <span className="text-foreground font-medium">{item}</span>
+                    </div>
+                  ))}
                 </div>
-              ))}
+                <p className="text-muted-foreground">
+                  If you're unsure, feel free to get in touch before booking.
+                </p>
+              </div>
             </div>
-            <p className="text-muted-foreground">
-              If you're unsure, feel free to get in touch before booking.
-            </p>
           </div>
         </div>
       </section>
