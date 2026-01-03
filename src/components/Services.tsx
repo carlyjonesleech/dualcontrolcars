@@ -8,16 +8,15 @@ const Services = () => {
       icon: <Calendar className="w-7 h-7" />,
       title: "Test Day Hire",
       description:
-        "Take your driving test in a car you're comfortable with. Pricing based on notice given. £80 discount without supervising driver.",
+        "Take your driving test in a car you're comfortable with. Only £80 extra if you want an ADI to accompany you.",
       features: [
-        "14+ days' notice: £195",
-        "7–13 days' notice: £245",
-        "Under 7 days' notice: £295",
-        "£80 off without supervising driver",
         "Full dual controls & insurance",
+        "Cheaper pricing with more notice",
+        "£80 extra for ADI to accompany",
+        "All local test centres covered",
       ],
-      price: "From £195",
-      priceLabel: "with driver",
+      price: "From £115*",
+      priceLabel: "per test",
       popular: true,
     },
     {
@@ -43,14 +42,14 @@ const Services = () => {
       description:
         "Extra practice with friends or family. Perfect for building confidence between lessons.",
       features: [
-        "Half day (3.5 hrs): £85",
-        "Full day hire: £150",
+        "Minimum 2 hours hire",
         "Evenings & weekends available",
         "Safe dual control system",
         "Comprehensive insurance",
+        "*Based on 6 hour hire for £150",
       ],
-      price: "From £85",
-      priceLabel: "half day",
+      price: "From £17*",
+      priceLabel: "per hour",
     },
   ];
 
