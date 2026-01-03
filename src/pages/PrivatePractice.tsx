@@ -143,11 +143,11 @@ const PrivatePractice = () => {
                   ))}
                 </div>
               </div>
-              <div className="hidden lg:block">
+              <div className="order-first lg:order-last">
                 <img
                   src={comingToRescue}
                   alt="Coming to the rescue - Chester Dual Control"
-                  className="w-full h-auto rounded-2xl shadow-xl"
+                  className="w-full max-w-sm mx-auto lg:max-w-none h-auto rounded-2xl shadow-xl"
                 />
               </div>
             </div>
