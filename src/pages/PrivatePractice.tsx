@@ -8,6 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import comingToRescue from "@/assets/coming-to-rescue.png";
 
 const PrivatePractice = () => {
   const heroFeatures = [
@@ -120,26 +121,36 @@ const PrivatePractice = () => {
       {/* Why Parents Choose Us */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <span className="text-secondary text-lg mb-2 block">❤️ WHY PARENTS CHOOSE US</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Practice Together. Safely. Confidently.
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              Learning to drive takes practice — but not every family has a suitable car, or feels comfortable supervising without safety controls.
-            </p>
-            <p className="text-muted-foreground text-lg mt-4">
-              Our dual-control manual and automatic cars allows parents to help their learner practise in a calm, controlled, and safer environment.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {whyChooseUs.map((item, index) => (
-              <div key={index} className="flex items-start gap-3 p-4 bg-card rounded-xl border border-border">
-                <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
-                <span className="text-foreground">{item}</span>
+          <div className="max-w-5xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <span className="text-secondary text-lg mb-2 block">❤️ WHY PARENTS CHOOSE US</span>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                  Practice Together. Safely. Confidently.
+                </h2>
+                <p className="text-muted-foreground text-lg">
+                  Learning to drive takes practice — but not every family has a suitable car, or feels comfortable supervising without safety controls.
+                </p>
+                <p className="text-muted-foreground text-lg mt-4 mb-8">
+                  Our dual-control manual and automatic cars allows parents to help their learner practise in a calm, controlled, and safer environment.
+                </p>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {whyChooseUs.map((item, index) => (
+                    <div key={index} className="flex items-start gap-3 p-4 bg-card rounded-xl border border-border">
+                      <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
+                      <span className="text-foreground text-sm">{item}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-            ))}
+              <div className="hidden lg:block">
+                <img
+                  src={comingToRescue}
+                  alt="Coming to the rescue - Chester Dual Control"
+                  className="w-full h-auto rounded-2xl shadow-xl"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
