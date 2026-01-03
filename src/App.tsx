@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import PrivatePractice from "./pages/PrivatePractice";
 import TestDayHire from "./pages/TestDayHire";
+import ADIReliefHire from "./pages/ADIReliefHire";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/private-practice" element={<PrivatePractice />} />
           <Route path="/test-day-hire" element={<TestDayHire />} />
+          <Route path="/adi-relief-hire" element={<ADIReliefHire />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
