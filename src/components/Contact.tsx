@@ -1,7 +1,56 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Send, Loader2 } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    service: "",
+    message: "",
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      await fetch("https://hook.eu1.make.com/1ca1lwcw0nb9so27czttx8w65jvdvila", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        mode: "no-cors",
+        body: JSON.stringify({
+          ...formData,
+          timestamp: new Date().toISOString(),
+        }),
+      });
+
+      toast({
+        title: "Message sent!",
+        description: "We'll get back to you as soon as possible.",
+      });
+
+      setFormData({ firstName: "", lastName: "", email: "", service: "", message: "" });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <section className="py-24 bg-background" id="contact">
       <div className="container mx-auto px-4">
@@ -59,7 +108,7 @@ const Contact = () => {
               Send us a message
             </h3>
 
-            <form className="space-y-5">
+            <form className="space-y-5" onSubmit={handleSubmit}>
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
@@ -67,6 +116,10 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
+                    name="firstName"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    required
                     className="w-full h-12 px-4 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-all"
                     placeholder="John"
                   />
@@ -77,6 +130,10 @@ const Contact = () => {
                   </label>
                   <input
                     type="text"
+                    name="lastName"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    required
                     className="w-full h-12 px-4 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-all"
                     placeholder="Smith"
                   />
@@ -89,6 +146,10 @@ const Contact = () => {
                 </label>
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
                   className="w-full h-12 px-4 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-all"
                   placeholder="john@example.com"
                 />
@@ -98,11 +159,18 @@ const Contact = () => {
                 <label className="block text-sm font-medium text-foreground mb-2">
                   Service Required
                 </label>
-                <select className="w-full h-12 px-4 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-all">
+                <select
+                  name="service"
+                  value={formData.service}
+                  onChange={handleChange}
+                  required
+                  className="w-full h-12 px-4 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-all"
+                >
                   <option value="">Select a service</option>
                   <option value="test-day">Test Day Hire</option>
                   <option value="adi-relief">ADI Relief Hire</option>
                   <option value="private-practice">Private Practice</option>
+                  <option value="mock-tests">Mock Tests</option>
                 </select>
               </div>
 
@@ -111,15 +179,27 @@ const Contact = () => {
                   Message
                 </label>
                 <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   rows={4}
                   className="w-full px-4 py-3 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-all resize-none"
                   placeholder="Tell us about your requirements..."
                 />
               </div>
 
-              <Button variant="hero" size="lg" className="w-full">
-                Send Message
-                <Send className="w-4 h-4" />
+              <Button variant="hero" size="lg" className="w-full" disabled={isLoading}>
+                {isLoading ? (
+                  <>
+                    <Loader2 className="w-4 h-4 animate-spin" />
+                    Sending...
+                  </>
+                ) : (
+                  <>
+                    Send Message
+                    <Send className="w-4 h-4" />
+                  </>
+                )}
               </Button>
             </form>
           </div>
