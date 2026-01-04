@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CheckCircle, ArrowRight } from "lucide-react";
-import testDayHero from "@/assets/test-day-hero.png";
+import heroBanner from "@/assets/hero-banner.png";
 
 const Hero = () => {
   const benefits = [
@@ -65,7 +65,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-secondary/20 to-transparent rounded-3xl blur-2xl" />
               <img
-                src={testDayHero}
+                src={heroBanner}
                 alt="Chester Dual Control Car Hire - Driving Test Car Hire"
                 className="relative rounded-2xl shadow-2xl w-full max-w-md mx-auto lg:max-w-none object-cover"
               />
