@@ -1,5 +1,5 @@
 import ServiceCard from "@/components/ServiceCard";
-import { Calendar, Users, Car } from "lucide-react";
+import { Calendar, Users, Car, ClipboardCheck } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -34,6 +34,21 @@ const Services = () => {
       ],
       price: "£60",
       priceLabel: "per day",
+    },
+    {
+      id: "mock-tests",
+      icon: <ClipboardCheck className="w-7 h-7" />,
+      title: "Mock Tests",
+      description:
+        "A realistic test-day experience. Get honest feedback and know exactly where you stand before the real thing.",
+      features: [
+        "2-hour assessment session",
+        "Test-style driving route",
+        "Written feedback summary",
+        "Home pick-up included",
+      ],
+      price: "£100",
+      priceLabel: "per session",
     },
     {
       id: "private-practice",

@@ -8,6 +8,7 @@ const Footer = () => {
     services: [
       { name: "Test Day Hire", href: "/test-day-hire" },
       { name: "ADI Relief Hire", href: "/adi-relief-hire" },
+      { name: "Mock Tests", href: "/mock-tests" },
       { name: "Private Practice", href: "/private-practice" },
     ],
     company: [
