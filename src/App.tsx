@@ -9,6 +9,7 @@ import PrivatePractice from "./pages/PrivatePractice";
 import TestDayHire from "./pages/TestDayHire";
 import ADIReliefHire from "./pages/ADIReliefHire";
 import MockTests from "./pages/MockTests";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/private-practice" element={<PrivatePractice />} />
