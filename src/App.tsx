@@ -9,6 +9,7 @@ import PrivatePractice from "./pages/PrivatePractice";
 import TestDayHire from "./pages/TestDayHire";
 import ADIReliefHire from "./pages/ADIReliefHire";
 import MockTests from "./pages/MockTests";
+import AboutUs from "./pages/AboutUs";
 import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/test-day-hire" element={<TestDayHire />} />
           <Route path="/adi-relief-hire" element={<ADIReliefHire />} />
           <Route path="/mock-tests" element={<MockTests />} />
+          <Route path="/about-us" element={<AboutUs />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -12,7 +12,7 @@ const Footer = () => {
       { name: "Private Practice", href: "/private-practice" },
     ],
     company: [
-      { name: "About Us", href: "#" },
+      { name: "About Us", href: "/about-us" },
       { name: "Our Fleet", href: "#" },
       { name: "Testimonials", href: "#" },
       { name: "FAQs", href: "#" },
