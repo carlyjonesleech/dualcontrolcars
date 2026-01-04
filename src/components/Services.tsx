@@ -46,7 +46,7 @@ const Services = () => {
         "Evenings & weekends available",
         "Safe dual control system",
         "Comprehensive insurance",
-        "*Based on 6 hour hire for £150",
+        "*Based on full day hire for £150",
       ],
       price: "From £17*",
       priceLabel: "per hour",

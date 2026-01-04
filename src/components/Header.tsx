@@ -8,7 +8,7 @@ const Header = () => {
 
   const navLinks = [
     { name: "Test Day Hire", href: "/test-day-hire" },
-    { name: "ADI Relief", href: "/#adi-relief" },
+    { name: "ADI Relief", href: "/adi-relief-hire" },
     { name: "Private Practice", href: "/private-practice" },
     { name: "Contact", href: "/#contact" },
   ];
