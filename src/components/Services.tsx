@@ -18,6 +18,7 @@ const Services = () => {
       price: "From £115*",
       priceLabel: "per test",
       popular: true,
+      href: "/test-day-hire",
     },
     {
       id: "adi-relief",
@@ -34,6 +35,7 @@ const Services = () => {
       ],
       price: "£60",
       priceLabel: "per day",
+      href: "/adi-relief-hire",
     },
     {
       id: "mock-tests",
@@ -49,6 +51,7 @@ const Services = () => {
       ],
       price: "£100",
       priceLabel: "per session",
+      href: "/mock-tests",
     },
     {
       id: "private-practice",
@@ -65,6 +68,7 @@ const Services = () => {
       ],
       price: "From £17*",
       priceLabel: "per hour",
+      href: "/private-practice",
     },
   ];
 
