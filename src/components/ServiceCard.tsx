@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface ServiceCardProps {
   id: string;
@@ -11,6 +12,7 @@ interface ServiceCardProps {
   price: string;
   priceLabel: string;
   popular?: boolean;
+  href?: string;
 }
 
 const ServiceCard = ({
@@ -22,6 +24,7 @@ const ServiceCard = ({
   price,
   priceLabel,
   popular = false,
+  href,
 }: ServiceCardProps) => {
   return (
     <div
@@ -86,9 +89,12 @@ const ServiceCard = ({
         variant={popular ? "hero" : "outline"}
         size="lg"
         className="w-full"
+        asChild
       >
-        Book Now
-        <ArrowRight className="w-4 h-4" />
+        <Link to={href || `/#${id}`}>
+          Learn More
+          <ArrowRight className="w-4 h-4" />
+        </Link>
       </Button>
     </div>
   );
