@@ -6,9 +6,9 @@ const Footer = () => {
 
   const links = {
     services: [
-      { name: "Test Day Hire", href: "#test-day" },
-      { name: "ADI Relief Hire", href: "#adi-relief" },
-      { name: "Private Practice", href: "#private-practice" },
+      { name: "Test Day Hire", href: "/test-day-hire" },
+      { name: "ADI Relief Hire", href: "/adi-relief-hire" },
+      { name: "Private Practice", href: "/private-practice" },
     ],
     company: [
       { name: "About Us", href: "#" },
