@@ -48,16 +48,6 @@ const Hero = () => {
               ))}
             </ul>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up" style={{ animationDelay: "0.4s" }}>
-              <Button variant="hero" size="xl">
-                View Our Services
-                <ArrowRight className="w-5 h-5" />
-              </Button>
-              <Button variant="heroOutline" size="xl">
-                Get a Quote
-              </Button>
-            </div>
           </div>
 
           {/* Image */}
