@@ -1,10 +1,26 @@
 import { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleContactClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (location.pathname === "/") {
+      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/");
+      setTimeout(() => {
+        document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+    setIsMenuOpen(false);
+  };
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -34,6 +50,7 @@ const Header = () => {
               <a
                 key={link.name}
                 href={link.href}
+                onClick={link.name === "Contact" ? handleContactClick : undefined}
                 className="text-muted-foreground hover:text-foreground font-medium transition-colors"
               >
                 {link.name}
@@ -67,7 +84,7 @@ const Header = () => {
                   key={link.name}
                   href={link.href}
                   className="text-muted-foreground hover:text-foreground font-medium transition-colors py-2"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={link.name === "Contact" ? handleContactClick : () => setIsMenuOpen(false)}
                 >
                   {link.name}
                 </a>
