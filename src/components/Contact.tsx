@@ -10,6 +10,7 @@ const Contact = () => {
     firstName: "",
     lastName: "",
     email: "",
+    phone: "",
     service: "",
     message: "",
   });
@@ -27,6 +28,7 @@ const Contact = () => {
         firstName: formData.firstName,
         lastName: formData.lastName,
         email: formData.email,
+        phone: formData.phone,
         service: formData.service,
         message: formData.message,
         timestamp: new Date().toISOString(),
@@ -44,7 +46,7 @@ const Contact = () => {
         description: "We'll get back to you as soon as possible.",
       });
 
-      setFormData({ firstName: "", lastName: "", email: "", service: "", message: "" });
+      setFormData({ firstName: "", lastName: "", email: "", phone: "", service: "", message: "" });
     } catch (error) {
       console.error("Error submitting form:", error);
       toast({
@@ -146,19 +148,34 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full h-12 px-4 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-all"
-                  placeholder="john@example.com"
-                />
+              <div className="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                    className="w-full h-12 px-4 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-all"
+                    placeholder="john@example.com"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-foreground mb-2">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full h-12 px-4 rounded-lg border border-input bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring transition-all"
+                    placeholder="07123 456789"
+                  />
+                </div>
               </div>
 
               <div>
