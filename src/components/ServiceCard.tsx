@@ -86,7 +86,7 @@ const ServiceCard = ({
 
       {/* CTA */}
       <Button
-        variant={popular ? "hero" : "outline"}
+        variant="hero"
         size="lg"
         className="w-full"
         asChild
