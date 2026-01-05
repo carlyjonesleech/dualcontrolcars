@@ -23,14 +23,20 @@ const Contact = () => {
     setIsLoading(true);
 
     try {
+      const urlEncodedData = new URLSearchParams({
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        service: formData.service,
+        message: formData.message,
+        timestamp: new Date().toISOString(),
+      });
+
       await fetch("https://hook.eu1.make.com/1ca1lwcw0nb9so27czttx8w65jvdvila", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
         mode: "no-cors",
-        body: JSON.stringify({
-          ...formData,
-          timestamp: new Date().toISOString(),
-        }),
+        body: urlEncodedData.toString(),
       });
 
       toast({
