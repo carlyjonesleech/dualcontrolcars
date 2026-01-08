@@ -413,7 +413,7 @@ const ADIReliefHire = () => {
                 <Mail className="w-6 h-6 text-secondary" />
                 <span className="text-primary-foreground/80">Email</span>
                 <a
-                  href="mailto:info@chesterdualcontrol.co.uk"
+                  href="mailto:carly@chesterdualcontrolcars.com"
                   className="font-semibold hover:text-secondary transition-colors"
                 >
                   Get in touch

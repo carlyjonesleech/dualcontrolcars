@@ -442,11 +442,11 @@ const TestDayHire = () => {
                 <span>Call Us</span>
               </a>
               <a
-                href="mailto:info@chesterdualcontrol.co.uk"
+                href="mailto:carly@chesterdualcontrolcars.com"
                 className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                <span>info@chesterdualcontrol.co.uk</span>
+                <span>carly@chesterdualcontrolcars.com</span>
               </a>
             </div>
           </div>

@@ -94,7 +94,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email us</p>
-                  <p className="font-semibold text-foreground">info@chesterdualcontrol.co.uk</p>
+                  <a href="mailto:carly@chesterdualcontrolcars.com" className="font-semibold text-foreground hover:text-secondary transition-colors">carly@chesterdualcontrolcars.com</a>
                 </div>
               </div>
 
