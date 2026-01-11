@@ -39,7 +39,7 @@ const Hero = () => {
             </p>
 
             {/* Benefits list */}
-            <ul className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-10 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+            <ul className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-16 animate-fade-up" style={{ animationDelay: "0.3s" }}>
               {benefits.map((benefit) => (
                 <li key={benefit} className="flex items-center gap-2 text-primary-foreground/80">
                   <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
