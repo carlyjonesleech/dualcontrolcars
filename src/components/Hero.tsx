@@ -61,18 +61,6 @@ const Hero = () => {
               />
             </div>
             
-            {/* Floating badge */}
-            <div className="absolute -bottom-4 -left-4 bg-card rounded-xl p-4 shadow-xl animate-float hidden lg:flex">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center">
-                  <span className="text-2xl">⭐</span>
-                </div>
-                <div>
-                  <p className="font-bold text-foreground">4.9 Rating</p>
-                  <p className="text-sm text-muted-foreground">500+ Reviews</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
