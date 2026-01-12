@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, MapPin, Car, Shield, Users, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Car, Shield, Users, Clock, Award, Heart, Network } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const AboutUs = () => {
@@ -95,8 +95,90 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Our Values Section */}
+      {/* Meet Your Instructor Section */}
       <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-4">
+                Meet Your Instructor
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Qualified, Experienced & Patient
+              </h2>
+            </div>
+
+            <div className="bg-card rounded-3xl shadow-xl border border-border overflow-hidden">
+              <div className="grid md:grid-cols-2 gap-0">
+                {/* Left side - Main bio */}
+                <div className="p-8 md:p-10">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="w-14 h-14 rounded-full bg-secondary/20 flex items-center justify-center">
+                      <Award className="w-7 h-7 text-secondary" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-card-foreground">DVSA Approved ADI</h3>
+                      <p className="text-secondary font-medium">Green Badge Holder</p>
+                    </div>
+                  </div>
+                  
+                  <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
+                    I'm a patient, friendly, and fully qualified DVSA Approved Driving Instructor with over 
+                    <span className="font-semibold text-foreground"> 3 years of professional teaching experience </span> 
+                    and <span className="font-semibold text-foreground">25 years behind the wheel</span>.
+                  </p>
+                  
+                  <p className="text-muted-foreground leading-relaxed">
+                    I understand that every learner is different, which is why I take a calm, encouraging approach 
+                    to help you build confidence at your own pace. Whether you need extra practice before your test 
+                    or a realistic mock assessment, I'm here to support you every step of the way.
+                  </p>
+                </div>
+
+                {/* Right side - Credentials */}
+                <div className="bg-primary/5 p-8 md:p-10">
+                  <h4 className="text-lg font-bold text-card-foreground mb-6">What Sets Us Apart</h4>
+                  
+                  <div className="space-y-5">
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-lg bg-secondary/20 flex items-center justify-center shrink-0">
+                        <Heart className="w-5 h-5 text-secondary" />
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-card-foreground mb-1">Patient & Supportive</h5>
+                        <p className="text-muted-foreground text-sm">A calm, encouraging approach tailored to your individual needs and learning pace.</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-lg bg-secondary/20 flex items-center justify-center shrink-0">
+                        <Award className="w-5 h-5 text-secondary" />
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-card-foreground mb-1">Test Day Expertise</h5>
+                        <p className="text-muted-foreground text-sm">Extensive experience sitting in on driving tests and conducting realistic mock assessments.</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-start gap-4">
+                      <div className="w-10 h-10 rounded-lg bg-secondary/20 flex items-center justify-center shrink-0">
+                        <Network className="w-5 h-5 text-secondary" />
+                      </div>
+                      <div>
+                        <h5 className="font-semibold text-card-foreground mb-1">Trusted Network</h5>
+                        <p className="text-muted-foreground text-sm">Connected with a network of qualified instructors for mock tests, test day accompaniment, and pre-test lessons when needed.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Values Section */}
+      <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="inline-block text-secondary font-semibold text-sm uppercase tracking-wider mb-4">
