@@ -38,8 +38,13 @@ const ADIReliefHire = () => {
     },
     {
       icon: <FileCheck className="w-8 h-8" />,
-      title: "Pink Licence Period",
-      description: "Newly qualified? Our dual-control vehicles let you start teaching immediately while waiting for your full licence.",
+      title: "Trainee Licence (Pink Badge)",
+      description: "Part-qualified and working towards Part 3? Hire a dual-control vehicle to gain experience and build hours while you train.",
+    },
+    {
+      icon: <Car className="w-8 h-8" />,
+      title: "Try Different Vehicles",
+      description: "Want to test a different car or transmission before committing? Or let your pupils experience something new? We've got you covered.",
     },
   ];
 
@@ -62,9 +67,10 @@ const ADIReliefHire = () => {
   const idealFor = [
     "Your car is off the road after an accident",
     "Awaiting repairs due to mechanical issues",
-    "You're on your pink licence and need dual controls",
+    "You're on a pink badge and working towards Part 3",
     "Holiday cover or temporary capacity increase",
     "Testing a franchise before committing long-term",
+    "Trying a different vehicle or transmission type",
   ];
 
   const faqs = [
@@ -120,7 +126,7 @@ const ADIReliefHire = () => {
                 Dual-Control Vehicle Hire for Driving Instructors
               </p>
               <p className="text-lg text-primary-foreground/70 mb-8">
-                When your car is off the road, your income doesn't have to stop. Our relief hire service keeps you teaching — whether you've had an accident, a breakdown, or you're on your pink licence.
+                When your car is off the road, your income doesn't have to stop. Our relief hire service keeps you teaching — whether you've had an accident, a breakdown, or you're training on a pink badge.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button variant="hero" size="lg" className="text-lg px-8">
@@ -244,7 +250,7 @@ const ADIReliefHire = () => {
         </div>
       </section>
 
-      {/* Pink Licence Section */}
+      {/* Trainee Licence Section */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -252,20 +258,20 @@ const ADIReliefHire = () => {
               <div>
                 <div className="inline-flex items-center gap-2 bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-medium mb-4">
                   <FileCheck className="w-4 h-4" />
-                  New Instructors
+                  Trainee Instructors
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Starting on Your Pink Licence?
+                  Working Towards Part 3?
                 </h2>
                 <p className="text-muted-foreground mb-6">
-                  Congratulations on passing your Part 3! If you're waiting for your green badge but ready to start teaching, our dual-control vehicles let you begin earning immediately.
+                  If you've passed Part 2 and are on your pink badge, you need a dual-control vehicle to train with pupils while working towards your Part 3 qualification.
                 </p>
                 <ul className="space-y-3">
                   {[
-                    "No need to buy or lease immediately",
-                    "Test different vehicle types",
-                    "Build your business from day one",
-                    "Flexible terms as you establish yourself",
+                    "No need to buy or lease while still training",
+                    "Build teaching hours and experience",
+                    "Flexible hire while you qualify",
+                    "Try different vehicles before committing",
                   ].map((item, index) => (
                     <li key={index} className="flex items-center gap-3">
                       <CheckCircle className="w-5 h-5 text-secondary flex-shrink-0" />
@@ -276,9 +282,9 @@ const ADIReliefHire = () => {
               </div>
               <div className="bg-card p-8 rounded-2xl border border-border">
                 <Shield className="w-12 h-12 text-secondary mb-4" />
-                <h3 className="text-xl font-bold mb-4">Peace of Mind</h3>
+                <h3 className="text-xl font-bold mb-4">Focus on Qualifying</h3>
                 <p className="text-muted-foreground">
-                  Focus on building your business and developing your teaching skills. We handle the vehicle, maintenance, and breakdown cover — you handle the pupils.
+                  Concentrate on developing your teaching skills and passing Part 3. We handle the vehicle, maintenance, and breakdown cover — you handle the learning.
                 </p>
               </div>
             </div>
