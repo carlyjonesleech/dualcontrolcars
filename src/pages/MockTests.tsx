@@ -109,8 +109,11 @@ const MockTests = () => {
               A Realistic Test-Day Experience
               <span className="block text-secondary">Before the Real Thing</span>
             </h1>
-            <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl">
+            <p className="text-xl text-primary-foreground/90 mb-4 max-w-2xl">
               Our Mock Driving Tests are designed to replicate the real driving test as closely as possible — helping learners understand exactly where they stand before test day.
+            </p>
+            <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl">
+              Conducted by a qualified ADI with extensive experience sitting in on driving tests and conducting mock assessments.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button variant="hero" size="lg">

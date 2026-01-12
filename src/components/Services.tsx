@@ -42,12 +42,13 @@ const Services = () => {
       icon: <ClipboardCheck className="w-7 h-7" />,
       title: "Mock Tests",
       description:
-        "A realistic test-day experience. Get honest feedback and know exactly where you stand before the real thing.",
+        "A realistic test-day experience conducted by a qualified ADI experienced in sitting in on driving tests.",
       features: [
         "2-hour assessment session",
         "Test-style driving route",
         "Written feedback summary",
         "Home pick-up included",
+        "Conducted by experienced ADI",
       ],
       price: "£100",
       priceLabel: "per session",
