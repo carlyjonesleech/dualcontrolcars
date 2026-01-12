@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Car, Shield, Users, Clock, Award, Heart, Network } from "lucide-react";
 import { Link } from "react-router-dom";
+import instructorPhoto from "@/assets/instructor-photo.png";
 
 const AboutUs = () => {
   const values = [
@@ -109,10 +110,23 @@ const AboutUs = () => {
             </div>
 
             <div className="bg-card rounded-3xl shadow-xl border border-border overflow-hidden">
-              <div className="grid md:grid-cols-2 gap-0">
-                {/* Left side - Main bio */}
+              <div className="grid md:grid-cols-3 gap-0">
+                {/* Left side - Photo */}
+                <div className="md:col-span-1 relative">
+                  <img 
+                    src={instructorPhoto} 
+                    alt="Your driving instructor - DVSA Approved ADI" 
+                    className="w-full h-full object-cover object-center min-h-[300px] md:min-h-full"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4 md:hidden">
+                    <h3 className="text-white font-bold">DVSA Approved ADI</h3>
+                    <p className="text-secondary-foreground/80 text-sm">Green Badge Holder</p>
+                  </div>
+                </div>
+
+                {/* Middle - Main bio */}
                 <div className="p-8 md:p-10">
-                  <div className="flex items-center gap-3 mb-6">
+                  <div className="hidden md:flex items-center gap-3 mb-6">
                     <div className="w-14 h-14 rounded-full bg-secondary/20 flex items-center justify-center">
                       <Award className="w-7 h-7 text-secondary" />
                     </div>
