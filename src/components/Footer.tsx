@@ -18,7 +18,7 @@ const Footer = () => {
       { name: "FAQs", href: "/faq" },
     ],
     legal: [
-      { name: "Privacy Policy", href: "#" },
+      { name: "Privacy Policy", href: "/privacy-policy" },
       { name: "Terms of Service", href: "#" },
       { name: "Cookie Policy", href: "#" },
     ],
