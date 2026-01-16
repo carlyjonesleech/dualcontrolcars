@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, Shield, Car, Clock, MapPin, Phone, Mail, MessageCircle, Users, BookOpen, ChevronRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import CalendarWidget from "@/components/CalendarWidget";
 import {
   Accordion,
   AccordionContent,
@@ -365,6 +366,9 @@ const PrivatePractice = () => {
           </div>
         </div>
       </section>
+
+      {/* Calendar Widget */}
+      <CalendarWidget />
 
       <Footer />
     </div>
