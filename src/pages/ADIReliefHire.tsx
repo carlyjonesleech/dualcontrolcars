@@ -137,9 +137,12 @@ const ADIReliefHire = () => {
                   variant="outline"
                   size="lg"
                   className="text-lg px-8 bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+                  asChild
                 >
-                  <MessageCircle className="w-5 h-5 mr-2" />
-                  WhatsApp Us
+                  <a href="https://wa.me/message/NMZITS345GOME1" target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="w-5 h-5 mr-2" />
+                    WhatsApp Us
+                  </a>
                 </Button>
               </div>
             </div>
@@ -399,9 +402,12 @@ const ADIReliefHire = () => {
                 variant="outline"
                 size="lg"
                 className="text-lg px-8 bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
+                asChild
               >
-                <MessageCircle className="w-5 h-5 mr-2" />
-                WhatsApp Us
+                <a href="https://wa.me/message/NMZITS345GOME1" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  WhatsApp Us
+                </a>
               </Button>
             </div>
             <div className="grid sm:grid-cols-3 gap-6 text-center">
@@ -425,11 +431,11 @@ const ADIReliefHire = () => {
                   Get in touch
                 </a>
               </div>
-              <div className="flex flex-col items-center gap-2">
+              <a href="https://wa.me/message/NMZITS345GOME1" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-2 hover:text-secondary transition-colors">
                 <MessageCircle className="w-6 h-6 text-secondary" />
                 <span className="text-primary-foreground/80">WhatsApp</span>
                 <span className="font-semibold">Quick responses</span>
-              </div>
+              </a>
             </div>
           </div>
         </div>
