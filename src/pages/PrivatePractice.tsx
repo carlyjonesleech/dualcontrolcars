@@ -105,9 +105,11 @@ const PrivatePractice = () => {
                 Check Availability
                 <ChevronRight className="w-5 h-5" />
               </Button>
-              <Button variant="heroOutline" size="xl">
-                <MessageCircle className="w-5 h-5" />
-                WhatsApp Us
+              <Button variant="heroOutline" size="xl" asChild>
+                <a href="https://wa.me/message/NMZITS345GOME1" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5" />
+                  WhatsApp Us
+                </a>
               </Button>
             </div>
 
@@ -345,9 +347,11 @@ const PrivatePractice = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button variant="hero" size="xl">
-                <MessageCircle className="w-5 h-5" />
-                WhatsApp
+              <Button variant="hero" size="xl" asChild>
+                <a href="https://wa.me/message/NMZITS345GOME1" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5" />
+                  WhatsApp
+                </a>
               </Button>
               <Button variant="heroOutline" size="xl">
                 <Phone className="w-5 h-5" />
