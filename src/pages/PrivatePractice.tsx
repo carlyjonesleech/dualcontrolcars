@@ -101,9 +101,11 @@ const PrivatePractice = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="xl">
-                Check Availability
-                <ChevronRight className="w-5 h-5" />
+              <Button variant="hero" size="xl" asChild>
+                <a href="https://wa.me/message/NMZITS345GOME1" target="_blank" rel="noopener noreferrer">
+                  Check Availability
+                  <ChevronRight className="w-5 h-5" />
+                </a>
               </Button>
               <Button variant="heroOutline" size="xl" asChild>
                 <a href="https://wa.me/message/NMZITS345GOME1" target="_blank" rel="noopener noreferrer">
@@ -363,9 +365,11 @@ const PrivatePractice = () => {
               </Button>
             </div>
 
-            <Button variant="hero" size="xl">
-              Check Availability
-              <ChevronRight className="w-5 h-5" />
+            <Button variant="hero" size="xl" asChild>
+              <a href="https://wa.me/message/NMZITS345GOME1" target="_blank" rel="noopener noreferrer">
+                Check Availability
+                <ChevronRight className="w-5 h-5" />
+              </a>
             </Button>
           </div>
         </div>
