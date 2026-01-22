@@ -95,9 +95,11 @@ const TestDayHire = () => {
                 If your learner doesn't have access to a suitable car for their driving test, we offer a fully managed test-day vehicle hire service using modern, dual-control cars, based locally in Chester.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button variant="hero" size="lg" className="text-lg px-8">
-                  <Calendar className="w-5 h-5 mr-2" />
-                  Check Availability
+                <Button variant="hero" size="lg" className="text-lg px-8" asChild>
+                  <a href="https://wa.me/message/NMZITS345GOME1" target="_blank" rel="noopener noreferrer">
+                    <Calendar className="w-5 h-5 mr-2" />
+                    Check Availability
+                  </a>
                 </Button>
                 <Button
                   variant="outline"
@@ -423,9 +425,11 @@ const TestDayHire = () => {
               Advance notice strongly recommended
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button variant="hero" size="lg" className="text-lg px-8">
-                <Calendar className="w-5 h-5 mr-2" />
-                Check Availability
+              <Button variant="hero" size="lg" className="text-lg px-8" asChild>
+                <a href="https://wa.me/message/NMZITS345GOME1" target="_blank" rel="noopener noreferrer">
+                  <Calendar className="w-5 h-5 mr-2" />
+                  Check Availability
+                </a>
               </Button>
               <Button
                 variant="outline"

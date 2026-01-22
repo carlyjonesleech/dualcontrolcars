@@ -129,9 +129,11 @@ const ADIReliefHire = () => {
                 When your car is off the road, your income doesn't have to stop. Our relief hire service keeps you teaching — whether you've had an accident, a breakdown, or you're training on a pink badge.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button variant="hero" size="lg" className="text-lg px-8">
-                  <Calendar className="w-5 h-5 mr-2" />
-                  Check Availability
+                <Button variant="hero" size="lg" className="text-lg px-8" asChild>
+                  <a href="https://wa.me/message/NMZITS345GOME1" target="_blank" rel="noopener noreferrer">
+                    <Calendar className="w-5 h-5 mr-2" />
+                    Check Availability
+                  </a>
                 </Button>
                 <Button
                   variant="outline"
@@ -394,9 +396,12 @@ const ADIReliefHire = () => {
                 variant="hero"
                 size="lg"
                 className="text-lg px-8"
+                asChild
               >
-                <Calendar className="w-5 h-5 mr-2" />
-                Check Availability
+                <a href="https://wa.me/message/NMZITS345GOME1" target="_blank" rel="noopener noreferrer">
+                  <Calendar className="w-5 h-5 mr-2" />
+                  Check Availability
+                </a>
               </Button>
               <Button
                 variant="outline"
